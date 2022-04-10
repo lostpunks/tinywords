@@ -1,0 +1,231 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+  font-family: Fira Code,monospace;
+}
+
+#root {
+  display: grid;
+}
+
+.main-box {
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #black;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+header {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.minted {
+  color: #7000ff;
+}
+
+#row {
+  display: flex;
+  flex-direction: row;
+  align: top;
+}
+
+#dialog {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 3px;
+}
+
+#image-box {
+  align-self: top;
+  margin-left: 30px;
+}
+
+#image {
+  align-self: center;
+  box-shadow: 0px 0px 10px 5px #eeeeee;
+  padding: 10px;
+}
+
+#image img {
+  border: 1px solid #35636e;
+  width: 386px;
+}
+
+.artist img {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 10px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  font-size: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.button {
+  font-family: Fira Code, monospace;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: black;
+  border: solid 1px #35636e;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.warning .button {
+  background-color: #ff005c;
+}
+
+.button:hover {
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 5px #dddddd;
+}
+.button:active {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#public-token {
+  word-break: break-word;
+}
+#public-token-copy,
+#public-token-copy__copied {
+  float: right;
+  text-align: center;
+  margin: 15px 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#public-token-copy:hover {
+  border-radius: 3px;
+  color: white;
+  background-color: #35636e;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #7000ff;
+}
+
+.artist a {
+  color: #ff005c;
+}
+
+.artist a:hover {
+  text-decoration: underline;
+}
+
+#tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: none;
+  color: #35636e;
+  margin: 0px;
+  transition: 0.3s;
+}
+
+#tabs div {
+  width: 80%;
+  padding: 20px;
+  margin: 0px 10px;
+  border: solid 1px #35636e;
+  border-bottom: none;
+  text-align: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}
+
+#tabs div.active {
+  background-color: #35636e;
+  color: white;
+}
+
+#transfer-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 20px 10px;
+}
+
+#transfer-inputs input[type="text"] {
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: solid 2px #35636e;
+  outline: none;
+  font-size: 1rem;
+  border-right: none;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+#transfer-inputs input[type="number"] {
+  padding: 15px;
+  width: 60px;
+  border: solid 2px #35636e;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: none;
+  outline: none;
+  margin-right: 5px;
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+/* Removes arrows in input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
