@@ -107,7 +107,7 @@ const App = () => {
               <strong>Published on 10/04/2021 at 17:11</strong>
             </p>
             <p>
-              This is a re-creation of the <a href="https://www.fxhash.xyz/generative/609">3x3</a> fxhash project within the constraints of 8x8 pixels.
+              Tiny words is a generative art project where 4-letter words are rendered in a colorful grid of 8x8 pixels.
               Each token is fully generated on-chain with a <a href="https://tzkt.io/KT1HMi71JTTfjiko8KnUL8RftewW6WGkAUqV/storage/">custom contract</a> and minted to <a href="https://www.8bidou.com/">8bidou</a> in a single transaction.
             </p>
             <p>
@@ -119,7 +119,7 @@ const App = () => {
             <p>
               <strong>Editions:</strong> 100
               <br/>
-              <strong>Price:</strong> 0 tez
+              <strong>Price:</strong> 0 tez (gas & storage only)
               <br/>
               <strong>Royalties:</strong> 10%
             </p>
