@@ -34,7 +34,7 @@
   "scripts": {
     "start": "HTTPS=true npx serve -s build/",
     "debug": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "CI=false react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "update-taquito": "ncu -u --target newest --filter '/^@taquito.*$/' && npm i"
