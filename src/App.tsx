@@ -42,53 +42,6 @@ const App = () => {
     return { __html: qr.createImgTag(4) };
   };
 
-  let mintCount;
-  if (storage) {
-    mintCount = <span className="minted"><strong>{storage}/100 minted</strong></span>;
-  } else {
-    mintCount = <span/>;
-  }
-
-  let buttons;
-  if (userAddress) {
-    buttons = (
-    <div className="buttons">
-      <UpdateContract
-        contract={contract}
-        setUserBalance={setUserBalance}
-        Tezos={Tezos}
-        userAddress={userAddress}
-        setStorage={setStorage}
-      />
-      <DisconnectButton
-        wallet={wallet}
-        setPublicToken={setPublicToken}
-        setUserAddress={setUserAddress}
-        setUserBalance={setUserBalance}
-        setWallet={setWallet}
-        setTezos={setTezos}
-        setBeaconConnection={setBeaconConnection}
-      />
-    </div>
-    );
-  } else {
-    buttons = (
-    <div className="buttons">
-      <ConnectButton
-        Tezos={Tezos}
-        setContract={setContract}
-        setPublicToken={setPublicToken}
-        setWallet={setWallet}
-        setUserAddress={setUserAddress}
-        setUserBalance={setUserBalance}
-        setStorage={setStorage}
-        contractAddress={contractAddress}
-        setBeaconConnection={setBeaconConnection}
-        wallet={wallet}
-      />
-    </div>
-    );
-  }
   return (
     <div className="main-box">
       <div id="row">
@@ -101,8 +54,7 @@ const App = () => {
             <h1>tiny words</h1>
           </div>
           <div id="content">
-            {mintCount}
-            {buttons}
+            <span className="minted"><strong>100/100 minted</strong></span>
             <p>
               <strong>Published on 10/04/2021 at 17:11</strong>
             </p>
@@ -114,7 +66,8 @@ const App = () => {
               Forever limited to 100 editions on the Tezos blockchain. London, April 2022.
             </p>
             <p>
-              You can see all previously minted editions <a href="https://8x8.teztok.com/user/KT1HMi71JTTfjiko8KnUL8RftewW6WGkAUqV">here</a> (or <a href="https://8bidou.clxn.art/?address=KT1HMi71JTTfjiko8KnUL8RftewW6WGkAUqV&p=profile#page-top">here</a>).
+              You can see all minted editions <a href="https://8x8.teztok.com/user/KT1HMi71JTTfjiko8KnUL8RftewW6WGkAUqV">here</a> (or <a href="https://8bidou.clxn.art/?address=KT1HMi71JTTfjiko8KnUL8RftewW6WGkAUqV&p=profile#page-top">here</a>).
+              You may want to check out <a href="https://tiny3x3.art">tiny 3x3</a> as well.
             </p>
             <p>
               <strong>Editions:</strong> 100
